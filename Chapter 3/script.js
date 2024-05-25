@@ -31,6 +31,10 @@ let ageCalculation = function(birthyear,currentYear){
 }
 
 ageCalculation(2002,2024);
+let invitationn = function(name ="defaultName",time="Morning"){
+    console.log(`Welcome ${name} You are invited on our event in the ${time}`)
+}
+invitationn("Swayam","Morning");
 
 // ==========================================================================================================================>
 
@@ -80,4 +84,60 @@ console.log(compliment("You are a good coder")("Swayam"));
 // 2nd method
 
 let complimented = compliment("You are a good coder")("Swayam");
+// complimented("Lurie");
+
+// Compliment is a higher order function
+
+// ============================================================================================================>
+
+    // Function
+    // Immediately invoked function Expression
+    // Executed  only once 
+
+    (function(name){
+        console.log("This function will never execute again",name);
+    })("IIFE")
+
+    // =====================================================================================================================>
+    // SetTimeout and setInterval
+    
+    // SetTimeout -> Run Function "Once " after "interval of time"
+    // setInterval -> Run function repeatedly, Starting after the 
+    // interval of time, then repeating.......
+
+    // setTimeout
+    
+    function greeting(){
+        console.log("Welcome to our coder Family");
+    }
+
+    setTimeout(greeting,5000);
+    
+// SetInterval
+
+// setInterval(greeting,3000);
+
+//=======================================================================================================================1.
+
+// HOISTING
+// .Variable "declaration" are "hoisted" towards top of their scope
+test = 10;
+console.log(test);
+var test;
+
+// only applicable for var const and let doesn't cause hoisting
+
+// Function
+
+best();
+
+function best(){
+    console.log("Hello Programmer");
+}
+
+// Not  applicable on function expression or Arrow function
+
+
+
+
 
